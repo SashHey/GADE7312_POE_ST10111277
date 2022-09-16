@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\damie\source\repos\WindowCreation\Main.cpp(88,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\damie\source\repos\WindowCreation\Main.cpp(90,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  WindowCreation.vcxproj -> C:\Users\damie\source\repos\WindowCreation\Debug\WindowCreation.exe
+          1 file(s) copied.
