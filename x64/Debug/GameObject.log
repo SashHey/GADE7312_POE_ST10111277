@@ -1,1 +1,17 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (GameObject.vcxproj, WindowCreation.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glutSolidCube referenced in function "private: virtual void __cdecl GameObject::drawGeometry(void)" (?drawGeometry@GameObject@@EEAAXXZ)
+GameObject.obj : error LNK2019: unresolved external symbol __imp_glutSolidCone referenced in function "private: void __cdecl GameObject::drawOrigin(void)" (?drawOrigin@GameObject@@AEAAXXZ)
+Main.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl timer(int)" (?timer@@YAXH@Z)
+Main.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol __imp_glutTimerFunc referenced in function "void __cdecl timer(int)" (?timer@@YAXH@Z)
+Main.obj : error LNK2019: unresolved external symbol __imp_glutSpecialFunc referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp_glutGet referenced in function main
+Main.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+Main.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\Libraries\freeglut\lib\freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\x64\Debug\GADE7312_POE_ST10111277.exe : fatal error LNK1120: 14 unresolved externals
