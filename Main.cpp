@@ -1,6 +1,7 @@
 
 #include "GL/glew.h"
 #include <GL/glut.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 #include <math.h>
 #include <Windows.h>
@@ -18,7 +19,6 @@
 #include "VertexBufferLayout.h"
 #include "IndexBuffer.h"
 #include "VertexArray.h"
-
 
 //STB
 #define STB_IMAGE_IMPLEMENTATION

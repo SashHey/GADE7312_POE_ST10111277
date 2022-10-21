@@ -1,14 +1,92 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (GameObject.vcxproj, New_Transforming.vcxproj, The_Stunks.vcxproj, Transforming.vcxproj, WindowCreation.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   ChessBoard.cpp
-C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\ChessBoard.cpp(231,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\sasha\Downloads\GADE7312_POE_ST10111277\ChessBoard.cpp(231,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   GameObject.cpp
   HeightMap.cpp
-C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\HeightMap.cpp(11,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\HeightMap.cpp(11,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\sasha\Downloads\GADE7312_POE_ST10111277\HeightMap.cpp(11,36): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\sasha\Downloads\GADE7312_POE_ST10111277\HeightMap.cpp(11,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  IndexBuffer.cpp
   Main.cpp
+C:\Users\sasha\Downloads\GADE7312_POE_ST10111277\Main.cpp(126,10): warning C4101: 'render': unreferenced local variable
   Pixel.cpp
+  Render.cpp
+  Shader.cpp
   Texture.cpp
   TexturedCube.cpp
+  stb_image.cpp
+  Texturing.cpp
+  VertexArray.cpp
+  VertexBuffer.cpp
   Generating Code...
-  GameObject.vcxproj -> C:\Users\ruan\source\repos\GADE7312_POE_ST10111277\Debug\GADE7312_POE_ST10111277.exe
-          1 file(s) copied.
+stb_image.obj : error LNK2005: _stbi_convert_iphone_png_to_rgb already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_failure_reason already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_hdr_to_ldr_gamma already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_hdr_to_ldr_scale already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_image_free already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_info already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_info_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_info_from_file already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_info_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_16_bit already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_16_bit_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_16_bit_from_file already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_16_bit_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_hdr already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_hdr_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_hdr_from_file already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_is_hdr_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_ldr_to_hdr_gamma already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_ldr_to_hdr_scale already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_16 already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_16_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_16_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_from_file already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_from_file_16 already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_load_gif_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_loadf already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_loadf_from_callbacks already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_loadf_from_file already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_loadf_from_memory already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_set_flip_vertically_on_load already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_set_flip_vertically_on_load_thread already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_set_unpremultiply_on_load already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_buffer already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_malloc already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_malloc_guesssize already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_malloc_guesssize_headerflag already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_noheader_buffer already defined in Main.obj
+stb_image.obj : error LNK2005: _stbi_zlib_decode_noheader_malloc already defined in Main.obj
+IndexBuffer.obj : error LNK2019: unresolved external symbol __imp____glewBindBuffer referenced in function "public: __thiscall IndexBuffer::IndexBuffer(unsigned int const *,unsigned int)" (??0IndexBuffer@@QAE@PBII@Z)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp____glewBindBuffer
+IndexBuffer.obj : error LNK2019: unresolved external symbol __imp____glewBufferData referenced in function "public: __thiscall IndexBuffer::IndexBuffer(unsigned int const *,unsigned int)" (??0IndexBuffer@@QAE@PBII@Z)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp____glewBufferData
+IndexBuffer.obj : error LNK2019: unresolved external symbol __imp____glewDeleteBuffers referenced in function "public: __thiscall IndexBuffer::~IndexBuffer(void)" (??1IndexBuffer@@QAE@XZ)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp____glewDeleteBuffers
+IndexBuffer.obj : error LNK2019: unresolved external symbol __imp____glewGenBuffers referenced in function "public: __thiscall IndexBuffer::IndexBuffer(unsigned int const *,unsigned int)" (??0IndexBuffer@@QAE@PBII@Z)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp____glewGenBuffers
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewAttachShader referenced in function "private: unsigned int __thiscall Shader::CreateShader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CreateShader@Shader@@AAEIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewCompileShader referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewCreateProgram referenced in function "private: unsigned int __thiscall Shader::CreateShader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CreateShader@Shader@@AAEIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewCreateShader referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewDeleteProgram referenced in function "public: __thiscall Shader::~Shader(void)" (??1Shader@@QAE@XZ)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewDeleteShader referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewGetShaderInfoLog referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewGetShaderiv referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewGetUniformLocation referenced in function "public: int __thiscall Shader::GetUniLocation(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?GetUniLocation@Shader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewLinkProgram referenced in function "private: unsigned int __thiscall Shader::CreateShader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CreateShader@Shader@@AAEIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewShaderSource referenced in function "private: unsigned int __thiscall Shader::CompileShader(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CompileShader@Shader@@AAEIIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewUniform1f referenced in function "public: void __thiscall Shader::SetUniform1f(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,float)" (?SetUniform1f@Shader@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewUniform1i referenced in function "public: void __thiscall Shader::SetUniform1i(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?SetUniform1i@Shader@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewUniform4f referenced in function "public: void __thiscall Shader::SetUniform4f(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,float,float,float,float)" (?SetUniform4f@Shader@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@MMMM@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewUseProgram referenced in function "public: void __thiscall Shader::Bind(void)const " (?Bind@Shader@@QBEXXZ)
+Shader.obj : error LNK2019: unresolved external symbol __imp____glewValidateProgram referenced in function "private: unsigned int __thiscall Shader::CreateShader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CreateShader@Shader@@AAEIABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Texturing.obj : error LNK2019: unresolved external symbol __imp____glewActiveTexture referenced in function "public: void __thiscall Texturing::Bind(unsigned int)const " (?Bind@Texturing@@QBEXI@Z)
+VertexArray.obj : error LNK2019: unresolved external symbol __imp____glewEnableVertexAttribArray referenced in function "public: void __thiscall VertexArray::AddBuffer(class VertexBuffer const &,class VertexBufferLayout const &)" (?AddBuffer@VertexArray@@QAEXABVVertexBuffer@@ABVVertexBufferLayout@@@Z)
+VertexArray.obj : error LNK2019: unresolved external symbol __imp____glewVertexAttribPointer referenced in function "public: void __thiscall VertexArray::AddBuffer(class VertexBuffer const &,class VertexBufferLayout const &)" (?AddBuffer@VertexArray@@QAEXABVVertexBuffer@@ABVVertexBufferLayout@@@Z)
+VertexArray.obj : error LNK2019: unresolved external symbol __imp____glewBindVertexArray referenced in function "public: __thiscall VertexArray::VertexArray(void)" (??0VertexArray@@QAE@XZ)
+VertexArray.obj : error LNK2019: unresolved external symbol __imp____glewDeleteVertexArrays referenced in function "public: __thiscall VertexArray::~VertexArray(void)" (??1VertexArray@@QAE@XZ)
+VertexArray.obj : error LNK2019: unresolved external symbol __imp____glewGenVertexArrays referenced in function "public: __thiscall VertexArray::VertexArray(void)" (??0VertexArray@@QAE@XZ)
+C:\Users\sasha\Downloads\GADE7312_POE_ST10111277\Debug\GADE7312_POE_ST10111277.exe : fatal error LNK1120: 26 unresolved externals

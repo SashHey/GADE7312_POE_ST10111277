@@ -1,6 +1,7 @@
 #include "Shader.h"
 #include "Render.h"
-
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -117,7 +118,7 @@ int Shader::GetUniLocation(const std::string& name)
 	if (m_UniLocationCache.find(name) != m_UniLocationCache.end())
 		return m_UniLocationCache[name];
 
-	GLCall(int location = glGetUniLocation(m_RenderID, name.c_str()));
+	GLCall(int location = glGetUniformLocation(m_RenderID, name.c_str()));
 
 	m_UniLocationCache[name] = location;
 	return location;
