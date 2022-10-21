@@ -1,13 +1,23 @@
+
+#include "GL/glew.h"
 #include <GL/glut.h>
 #include <iostream>
 #include <math.h>
+#include <Windows.h>
+#include <string>
+
 #include "GameObject.h"
 #include "Pixel.h"
 #include "Texture.h"
 #include "TexturedCube.h"
 #include "ChessBoard.h"
 #include "HeightMap.h"
-#include <Windows.h>
+#include "Vendor\stb_image\Texturing.h"
+#include "Shader.h"
+#include "VertexBuffer.h"
+#include "VertexBufferLayout.h"
+#include "IndexBuffer.h"
+#include "VertexArray.h"
 
 
 //STB
@@ -25,9 +35,11 @@ static const int HEIGHT = 600;
 
 GameObject gameObject;
 Texture* texture;
+Texturing* texturing;
 TexturedCube gObject;
 ChessBoard chessBoard;
 HeightMap heightMap;
+//Shader shader;
 
 void input(int key, int x, int y);
 void init();
@@ -65,6 +77,68 @@ int main(int argc, char* argv[]) {
 	delete texture;
 
 	return 0;
+
+	std::cout << glGetString(GL_VERSION) << std::endl;
+	{
+		float positions[] = {
+			-0.5f, -0.5f, 0.0f, 0.0f, //0
+			0.5f, -0.5f, 1.0f, 0.0f, //1
+			0.5f, 0.5f, 1.0f, 1.0f, //2
+			-0.5f, 0.5f, 0.0f, 1.0f //3
+		};
+
+		unsigned int indices[] = {
+			0, 1, 2,
+			2, 3, 0
+		};
+
+		//Texture blending
+		GLCall(glEnable(GL_BLEND));
+		GLCall(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
+
+		VertexArray va;
+		VertexBuffer vb(positions, 4 * 4 * sizeof(float));
+
+		VertexBufferLayout layout;
+		layout.Push<float>(2);
+		layout.Push<float>(2);
+		va.AddBuffer(vb, layout);
+
+		IndexBuffer ib(indices, 6);
+
+		//Shaders
+		Shader shader("res/shaders/Basic.shader"); //locating the shader
+		shader.Bind();
+		shader.SetUniform4f("u_Color", 0.0f, 0.3f, 0.8f, 1.0f);
+
+		//Textures
+		Texturing texturing("Textures/cloudimage.png"); //locating the png image
+		texturing.Bind();
+		shader.SetUniform1i("u_Texture", 0);
+
+		//Unbinding
+		va.Unbind();
+		vb.Unbind();
+		ib.Unbind();
+		shader.Unbind();
+
+		//Rendering
+		Render render;
+
+		float r = 0.0f;
+		float increment = 0.05f;
+
+		//while (!glfwWindowShouldClose(window))
+		//{
+		//	render.Clear();
+
+		//	shader.Bind();
+		//	shader.SetUniform4f(u_Color, r, 0.3f, 0.8f, 1.0f);
+
+		//	render.Draw(va, ib, shader);
+		//}
+
+	}
 }
 
 //Change Initial Camera View + Texture
@@ -209,4 +283,3 @@ void input(int key, int x, int y) {
 		0, 1, 0
 	);
 }
-

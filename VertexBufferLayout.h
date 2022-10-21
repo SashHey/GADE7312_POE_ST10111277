@@ -3,6 +3,9 @@
 #include <vector>
 #include <GL/glew.h>
 #include "Render.h"
+#include <cassert>
+
+
 
 struct VertexBufferElement
 {
@@ -19,7 +22,7 @@ struct VertexBufferElement
 		case GL_UNSIGNED_BYTE: return 1;
 		}
 
-		ASSERT(false);
+		assert(false);
 		return 0;
 	}
 };
@@ -34,9 +37,9 @@ public:
 		: m_Stride(0){}
 
 	template<typename T>
-	void Push(int count)
+	void Push(unsigned int count)
 	{
-		static_assert(false);
+		assert(false);
 	}
 
 	template<>

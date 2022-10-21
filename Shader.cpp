@@ -55,7 +55,7 @@ unsigned int Shader::CompileShader(unsigned int type, const std::string& source)
 	GLCall(glShaderSource(id, 1, &src, nullptr));
 	GLCall(glCompileShader(id));
 
-	int results;
+	int result;
 	GLCall(glGetShaderiv(id, GL_COMPILE_STATUS, &result));
 	
 	if (result == GL_FALSE)

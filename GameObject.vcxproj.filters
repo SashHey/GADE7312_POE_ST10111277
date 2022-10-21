@@ -18,6 +18,9 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pixel.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
@@ -33,7 +36,25 @@
     <ClCompile Include="HeightMap.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pixel.cpp">
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\stb_image\stb_image.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\stb_image\Texturing.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,5 +77,34 @@
     <ClInclude Include="HeightMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\stb_image\Texturing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\stb_image\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBufferLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\Basic.shader">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
